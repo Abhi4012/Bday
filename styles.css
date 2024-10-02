@@ -212,7 +212,7 @@ section {
 }
 
 /* Responsive Styles for Mobile Devices */
-@media (max-width: 480px) {
+@media (max-width: 240px) {
     body {
         padding: 0 10px; /* Add padding for better spacing */
     }
