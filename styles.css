@@ -65,8 +65,10 @@ section {
 
 .timeline-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
 }
 
 .timeline-item {
@@ -212,7 +214,7 @@ section {
 }
 
 /* Responsive Styles for Mobile Devices */
-@media (max-width: 240px) {
+@media (max-width: 480px) {
     body {
         padding: 0 10px; /* Add padding for better spacing */
     }
@@ -222,7 +224,7 @@ section {
     }
 
     .intro-content h1 {
-        font-size: 2em; /* Smaller heading for mobile */
+        font-size: 1.5em; /* Smaller heading for mobile */
     }
 
     .intro-content p {
