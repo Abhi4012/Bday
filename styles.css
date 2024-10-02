@@ -204,6 +204,7 @@ section {
 } 
 */
 
+
 /* Global Styles */
 body {
     margin: 0;
@@ -224,7 +225,7 @@ section {
     padding: 60px 20px;
 }
 
-/* Full-Screen Parallax Intro */
+/* Parallax and Full-Screen Intro */
 .parallax-layer {
     height: 100vh;
     background: url('parallax-bg.jpg') no-repeat center center/cover;
@@ -237,7 +238,7 @@ section {
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
 }
 
 .intro-content h1 {
@@ -276,7 +277,7 @@ section {
 }
 
 .timeline-item {
-    width: 45%; /* Adjust width for responsiveness */
+    width: 40%;
     margin-bottom: 40px;
     opacity: 0;
     animation: slideIn 2s ease-in-out forwards;
@@ -364,56 +365,55 @@ section {
 .music {
     background: #ffe4e1; /* Misty rose */
     padding: 60px 20px;
+    text-align: center;
 }
 
 .music-player {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack audio players vertically */
+    align-items: center; /* Center audio players horizontally */
 }
 
 .music-player audio {
-    margin: 10px 0;
+    width: 80%; /* Set width for audio player */
+    max-width: 400px; /* Optional: set a max width for larger screens */
+    margin: 10px 0; /* Add some space between audio players */
 }
 
 /* Gallery */
 .gallery {
-    background: #e6e6fa; /* Lavender */
+    background-color: #fff0f6; /* Light pink */
     padding: 60px 20px;
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 15px;
 }
 
 .gallery img, .gallery video {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-
-    .timeline-item {
-        width: 90%;
+    to {
+        opacity: 1;
     }
+}
 
-    .countdown {
-        padding: 30px 10px;
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-
-    #timer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #timer div {
-        margin: 10px 0;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
