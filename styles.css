@@ -211,32 +211,43 @@ section {
     }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+
     h2 {
-        font-size: 2.5em; /* Smaller font size for headings */
+        font-size: 2em; /* Smaller font size for headings */
     }
 
     .intro-content h1 {
-        font-size: 2.5em; /* Adjusted for smaller screens */
+        font-size: 2em; /* Smaller heading for mobile */
     }
 
     .intro-content p {
-        font-size: 1.2em; /* Adjusted for smaller screens */
+        font-size: 1em; /* Adjust paragraph text for mobile */
+        margin: 0 5px; /* Reduced margin for better fit */
+    }
+
+    .parallax-layer {
+        height: 50vh; /* Adjust height for smaller screens */
     }
 
     .timeline-item {
-        width: 90%; /* Full width for timeline items */
-        margin: 20px auto; /* Center align timeline items */
+        width: 100%; /* Full width for timeline items */
+        margin: 20px 0; /* Add vertical spacing */
     }
 
     .flip-card {
-        width: 80%; /* Responsive width for flip card */
+        width: 90%; /* Full width for flip card on mobile */
         height: auto; /* Auto height for responsiveness */
+        margin: 0 auto; /* Center align flip card */
     }
 
     #timer {
         flex-direction: column; /* Stack timer elements vertically */
+        font-size: 1.5em; /* Adjust font size for timer */
     }
 
     .music-player {
@@ -244,28 +255,16 @@ section {
     }
 
     .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grid items */
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 2em; /* Smaller font size for headings */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Smaller grid items */
     }
 
-    .intro-content h1 {
-        font-size: 2em; /* Adjusted for mobile screens */
+    .gallery img, .gallery video {
+        width: 100%; /* Ensure images and videos fit the container */
+        height: auto; /* Maintain aspect ratio */
     }
 
-    .intro-content p {
-        font-size: 1em; /* Adjusted for mobile screens */
-    }
-
-    .flip-card {
-        width: 90%; /* Further reduce width for flip card */
-    }
-
-    .music-player audio {
-        width: 100%; /* Full width for audio player on mobile */
+    .surprise-content {
+        flex-direction: column; /* Stack surprise content vertically */
+        align-items: center; /* Center align items */
     }
 }
