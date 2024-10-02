@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Muskan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Full-Screen Parallax Intro with Layers -->
+    <section class="parallax-layer" id="intro">
+        <div class="intro-content">
+            <h1 class="fade-in-text">Happy Birthday, Muskan!</h1>
+            <p>Your special day is here, and it’s time to celebrate YOU!</p>
+            <button onclick="scrollToSection('timeline')">Start the Journey 🎉</button>
+        </div>
+    </section>
+
+    <!-- Canvas Heart Particles -->
+    <canvas id="heart-canvas"></canvas>
+
+    <!-- Parallax Layers for Background -->
+    <div id="layer1" class="parallax"></div>
+    <div id="layer2" class="parallax"></div>
+    <div id="layer3" class="parallax"></div>
+
+    <!-- Love Story with Animated Timeline -->
+    <section id="timeline" class="timeline">
+        <h2>Our Magical Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item animated-entry">
+                <h3>When We Met</h3>
+                <p>The day I saw you was the day my life changed forever. 💖</p>
+                <img src="antra-fotor-bg-remover-2024071420452.png" alt="Memory 1">
+            </div>
+            <div class="timeline-item animated-entry">
+                <h3>Our First Adventure</h3>
+                <p>Every moment with you is an adventure worth remembering!</p>
+                <img src="photo2.jpg" alt="Memory 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Screen Photo and Video Gallery -->
+    <section id="gallery" class="gallery">
+        <h2>Memories We've Shared</h2>
+        <div class="gallery-grid">
+            <img src="photo3.jpg" alt="Memory 3">
+            <img src="photo4.jpg" alt="Memory 4">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Interactive Music Playlist -->
+    <section id="music" class="music">
+        <h2>Your Playlist 🎶</h2>
+        <div class="music-player animated-fade">
+            <audio id="song1" controls>
+                <source src="Happy Birthday Someone Special Birthday StatusBirthday SongBest Birthday WhatsApp Status.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="song2" controls>
+                <source src="Happy Birthday Someone Special Birthday StatusBirthday SongBest Birthday WhatsApp Status.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Countdown Timer to Her Birthday -->
+    <section id="countdown" class="countdown">
+        <h2>Countdown to Your Special Day 🎂</h2>
+        <div id="timer">
+            <div><span id="days">00</span> Days</div>
+            <div><span id="hours">00</span> Hours</div>
+            <div><span id="minutes">00</span> Minutes</div>
+            <div><span id="seconds">00</span> Seconds</div>
+        </div>
+    </section>
+
+    <!-- Surprise Box with 3D Flip Animation -->
+    <section id="surprise" class="surprise">
+        <h2>Ready for a Surprise?</h2>
+        <button onclick="revealSurprise()">Open Your Gift 🎁</button>
+        <div id="surprise-content" class="hidden">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="gift-box.jpg" alt="Gift Box">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Surprise! A video just for you!</p>
+                        <video controls>
+                            <source src="surprise-video.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created with endless love by Vicky, just for you, Muskan. 💕</p>
+    </footer>
+
+    <!-- JavaScript for Interactions and Animations -->
+    <script src="script.js"></script>
+</body>
+</html>

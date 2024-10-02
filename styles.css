@@ -1,0 +1,419 @@
+/* Global Styles
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cursive', sans-serif;
+    background-color: #faf0f0;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 3em;
+    color: #ff69b4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Parallax and Full-Screen Intro 
+.parallax-layer {
+    height: 100vh;
+    background: url('parallax-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.intro-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.intro-content h1 {
+    font-size: 4em;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.intro-content p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+/* Floating Hearts Animation 
+#heart-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+/* Timeline Section 
+.timeline {
+    background-color: #fff0f6;
+    padding: 80px 20px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    width: 40%;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+.timeline-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Countdown Timer 
+.countdown {
+    background: #fef3f9;
+    color: #ff5e99;
+    padding: 50px 20px;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+}
+
+/* Flip Card 
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    background-color: #ff69b4;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Surprise Section 
+.surprise {
+    background: #ffe4e1;
+    padding: 60px 20px;
+}
+
+.surprise-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Music Player 
+.music {
+    background: #ffe4f0;
+    padding: 60px 20px;
+}
+
+.music-player audio {
+    width: 300px;
+    margin: 10px;
+}
+
+/* Gallery 
+.gallery {
+    background-color: #fef5f5;
+    padding: 60px 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img, .gallery video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Animations 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+*/
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cursive', sans-serif;
+    background-color: #094861; /* Sky blue background */
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 3em;
+    color: #ff1493; /* Deep pink */
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* Parallax and Full-Screen Intro */
+.parallax-layer {
+    height: 100vh;
+    background: url('parallax-bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.intro-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.intro-content h1 {
+    font-size: 4em;
+    animation: fadeIn 2s ease-in-out forwards;
+    color: #ff69b4; /* Hot pink */
+}
+
+.intro-content p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+/* Floating Hearts Animation */
+#heart-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+/* Timeline Section */
+.timeline {
+    background-color: #53b3a2; /* Misty rose */
+    padding: 80px 20px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    width: 40%;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+.timeline-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Countdown Timer */
+.countdown {
+    background: #ffebcd; /* Blanched almond */
+    color: #dc143c; /* Crimson */
+    padding: 50px 20px;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+}
+
+/* Flip Card */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.flip-card-front {
+    background-color: #fff; /* White */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back {
+    background-color: #ff1493; /* Deep pink */
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Surprise Section */
+.surprise {
+    background: #f5deb3; /* Wheat */
+    padding: 60px 20px;
+}
+
+.surprise-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Music Player */
+.music {
+    background: #ffe4e1; /* Misty rose */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column; /* Stack audio players vertically */
+    align-items: center; /* Center audio players horizontally */
+}
+
+.music-player audio {
+    width: 80%; /* Set width for audio player */
+    max-width: 400px; /* Optional: set a max width for larger screens */
+    margin: 10px 0; /* Add some space between audio players */
+}
+
+/* Gallery */
+.gallery {
+    background-color: #fff0f6; /* Light pink */
+    padding: 60px 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img, .gallery video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
