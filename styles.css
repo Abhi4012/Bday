@@ -204,7 +204,6 @@ section {
 } 
 */
 
-
 /* Global Styles */
 body {
     margin: 0;
@@ -415,5 +414,57 @@ section {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5em; /* Reduce font size on smaller screens */
+    }
+
+    .intro-content h1 {
+        font-size: 3em; /* Adjust heading size for smaller screens */
+    }
+
+    .intro-content p {
+        font-size: 1.2em; /* Adjust paragraph size for smaller screens */
+    }
+
+    .timeline-item {
+        width: 90%; /* Make timeline items full width */
+        margin: 0 auto; /* Center timeline items */
+    }
+
+    .flip-card {
+        width: 90%; /* Make flip cards responsive */
+        height: auto; /* Allow height to adjust */
+    }
+
+    #timer {
+        flex-direction: column; /* Stack timer items vertically */
+        font-size: 1.5em; /* Reduce font size for timer */
+    }
+
+    .music-player audio {
+        width: 90%; /* Make audio players responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2em; /* Further reduce font size */
+    }
+
+    .intro-content h1 {
+        font-size: 2.5em; /* Further reduce heading size */
+    }
+
+    .intro-content p {
+        font-size: 1em; /* Further reduce paragraph size */
+    }
+
+    .timeline-item {
+        width: 100%; /* Full width for very small screens */
     }
 }
