@@ -3,63 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout with Bootstrap</title>
+    <title>Happy Birthday Muskan</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS (Your styles as mentioned in the earlier code) -->
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Parallax Section -->
-    <section class="parallax-layer d-flex justify-content-center align-items-center">
-        <div class="intro-content text-center">
-            <h1>Welcome to the Celebration</h1>
-            <p>Join us for a wonderful journey!</p>
+    <!-- Full-Screen Parallax Intro with Layers -->
+    <section class="parallax-layer" id="intro">
+        <div class="container text-center intro-content">
+            <h1 class="fade-in-text">Happy Birthday, Muskan!</h1>
+            <p>Your special day is here, and it’s time to celebrate YOU!</p>
+            <button class="btn btn-primary mt-3" onclick="scrollToSection('timeline')">Start the Journey 🎉</button>
         </div>
     </section>
 
-    <!-- Timeline Section -->
-    <section class="timeline">
+    <!-- Canvas Heart Particles -->
+    <canvas id="heart-canvas"></canvas>
+
+    <!-- Parallax Layers for Background -->
+    <div id="layer1" class="parallax"></div>
+    <div id="layer2" class="parallax"></div>
+    <div id="layer3" class="parallax"></div>
+
+    <!-- Love Story with Animated Timeline -->
+    <section id="timeline" class="timeline">
         <div class="container">
-            <h2 class="text-center">Timeline</h2>
+            <h2 class="text-center">Our Magical Journey</h2>
             <div class="row timeline-container">
-                <div class="col-md-5 col-lg-4 timeline-item">
-                    <img src="image1.jpg" alt="Event 1">
+                <div class="col-md-5 timeline-item animated-entry">
+                    <h3>When We Met</h3>
+                    <p>The day I saw you was the day my life changed forever. 💖</p>
+                    <img src="antra-fotor-bg-remover-2024071420452.png" class="img-fluid" alt="Memory 1">
                 </div>
-                <div class="col-md-5 col-lg-4 timeline-item">
-                    <img src="image2.jpg" alt="Event 2">
-                </div>
-                <div class="col-md-5 col-lg-4 timeline-item">
-                    <img src="image3.jpg" alt="Event 3">
+                <div class="col-md-5 timeline-item animated-entry">
+                    <h3>Our First Adventure</h3>
+                    <p>Every moment with you is an adventure worth remembering!</p>
+                    <img src="muskan.jpg" class="img-fluid" alt="Memory 2">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Countdown Timer Section -->
-    <section class="countdown text-center">
-        <h2>Countdown to the Event</h2>
-        <div id="timer" class="d-flex justify-content-around flex-wrap">
-            <div>Days</div>
-            <div>Hours</div>
-            <div>Minutes</div>
-            <div>Seconds</div>
+    <!-- Full-Screen Photo and Video Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="text-center">Memories We've Shared</h2>
+            <div class="row gallery-grid">
+                <div class="col-sm-6 col-md-4">
+                    <img src="photo3.jpg" class="img-fluid" alt="Memory 3">
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <img src="photo4.jpg" class="img-fluid" alt="Memory 4">
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <video class="img-fluid" controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Flip Card Section -->
-    <section class="surprise">
+    <!-- Interactive Music Playlist -->
+    <section id="music" class="music">
         <div class="container text-center">
-            <h2>Flip Card Surprise</h2>
-            <div class="d-flex justify-content-center surprise-content">
+            <h2>Your Playlist 🎶</h2>
+            <div class="music-player animated-fade">
+                <audio id="song1" controls class="my-2">
+                    <source src="Happy Birthday Someone Special Birthday StatusBirthday SongBest Birthday WhatsApp Status.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio id="song2" controls class="my-2">
+                    <source src="Happy Birthday Someone Special Birthday StatusBirthday SongBest Birthday WhatsApp Status.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer to Her Birthday -->
+    <section id="countdown" class="countdown">
+        <div class="container text-center">
+            <h2>Countdown to Your Special Day 🎂</h2>
+            <div id="timer" class="d-flex justify-content-around">
+                <div><span id="days">00</span> Days</div>
+                <div><span id="hours">00</span> Hours</div>
+                <div><span id="minutes">00</span> Minutes</div>
+                <div><span id="seconds">00</span> Seconds</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surprise Box with 3D Flip Animation -->
+    <section id="surprise" class="surprise">
+        <div class="container text-center">
+            <h2>Celebrate Your Day.</h2>
+            <button class="btn btn-success mt-3" onclick="revealSurprise()">Open Your Gift 🎁</button>
+            <div id="surprise-content" class="hidden mt-5">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <p>Front Side</p>
+                            <img src="gift-box.jpg" class="img-fluid" alt="Gift Box">
                         </div>
                         <div class="flip-card-back">
-                            <p>Back Side</p>
+                            <p>Surprise! A video just for you!</p>
+                            <video class="img-fluid" controls>
+                                <source src="muskan.mp4" type="video/mp4">
+                                Your browser does not support the video element.
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -67,38 +121,13 @@
         </div>
     </section>
 
-    <!-- Music Player Section -->
-    <section class="music">
-        <div class="container">
-            <h2 class="text-center">Music Player</h2>
-            <div class="music-player">
-                <audio controls>
-                    <source src="music1.mp3" type="audio/mpeg">
-                </audio>
-                <audio controls>
-                    <source src="music2.mp3" type="audio/mpeg">
-                </audio>
-            </div>
-        </div>
-    </section>
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>Created with endless love by Vicky, just for you, Muskan. 💕</p>
+    </footer>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <div class="container">
-            <h2 class="text-center">Gallery</h2>
-            <div class="gallery-grid row">
-                <div class="col-6 col-md-4">
-                    <img src="gallery1.jpg" alt="Gallery 1">
-                </div>
-                <div class="col-6 col-md-4">
-                    <img src="gallery2.jpg" alt="Gallery 2">
-                </div>
-                <div class="col-6 col-md-4">
-                    <img src="gallery3.jpg" alt="Gallery 3">
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- JavaScript for Interactions and Animations -->
+    <script src="script.js"></script>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
