@@ -3,111 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Muskan</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Layout with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (Your styles as mentioned in the earlier code) -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Full-Screen Parallax Intro with Layers -->
-    <section class="parallax-layer" id="intro">
-        <div class="intro-content">
-            <h1 class="fade-in-text">Happy Birthday, Muskan!</h1>
-            <p>Your special day is here, and it’s time to celebrate YOU!</p>
-            <button onclick="scrollToSection('timeline')">Start the Journey 🎉</button>
+
+    <!-- Parallax Section -->
+    <section class="parallax-layer d-flex justify-content-center align-items-center">
+        <div class="intro-content text-center">
+            <h1>Welcome to the Celebration</h1>
+            <p>Join us for a wonderful journey!</p>
         </div>
     </section>
 
-    <!-- Canvas Heart Particles -->
-    <canvas id="heart-canvas"></canvas>
-
-    <!-- Parallax Layers for Background -->
-    <div id="layer1" class="parallax"></div>
-    <div id="layer2" class="parallax"></div>
-    <div id="layer3" class="parallax"></div>
-
-    <!-- Love Story with Animated Timeline -->
-    <section id="timeline" class="timeline">
-        <h2>Our Magical Journey</h2>
-        <div class="timeline-container">
-            <div class="timeline-item animated-entry">
-                <h3>When We Met</h3>
-                <p>The day I saw you was the day my life changed forever. 💖</p>
-                <img src="antra-fotor-bg-remover-2024071420452.png" alt="Memory 1">
-            </div>
-            <div class="timeline-item animated-entry">
-                <h3>Our First Adventure</h3>
-                <p>Every moment with you is an adventure worth remembering!</p>
-                <img src="muskan.jpg" alt="Memory 2">
+    <!-- Timeline Section -->
+    <section class="timeline">
+        <div class="container">
+            <h2 class="text-center">Timeline</h2>
+            <div class="row timeline-container">
+                <div class="col-md-5 col-lg-4 timeline-item">
+                    <img src="image1.jpg" alt="Event 1">
+                </div>
+                <div class="col-md-5 col-lg-4 timeline-item">
+                    <img src="image2.jpg" alt="Event 2">
+                </div>
+                <div class="col-md-5 col-lg-4 timeline-item">
+                    <img src="image3.jpg" alt="Event 3">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Full-Screen Photo and Video Gallery -->
-    <section id="gallery" class="gallery">
-        <h2>Memories We've Shared</h2>
-        <div class="gallery-grid">
-            <img src="photo3.jpg" alt="Memory 3">
-            <img src="photo4.jpg" alt="Memory 4">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <!-- Countdown Timer Section -->
+    <section class="countdown text-center">
+        <h2>Countdown to the Event</h2>
+        <div id="timer" class="d-flex justify-content-around flex-wrap">
+            <div>Days</div>
+            <div>Hours</div>
+            <div>Minutes</div>
+            <div>Seconds</div>
         </div>
     </section>
 
-    <!-- Interactive Music Playlist -->
-    <section id="music" class="music">
-        <h2>Your Playlist 🎶</h2>
-        <div class="music-player animated-fade">
-            <audio id="song1" controls>
-                <source src="Happy Birthday Someone Special Birthday StatusBirthday SongBest Birthday WhatsApp Status.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio id="song2" controls>
-                <source src="Happy Birthday Someone Special Birthday StatusBirthday SongBest Birthday WhatsApp Status.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </section>
-
-    <!-- Countdown Timer to Her Birthday -->
-    <section id="countdown" class="countdown">
-        <h2>Countdown to Your Special Day 🎂</h2>
-        <div id="timer">
-            <div><span id="days">00</span> Days</div>
-            <div><span id="hours">00</span> Hours</div>
-            <div><span id="minutes">00</span> Minutes</div>
-            <div><span id="seconds">00</span> Seconds</div>
-        </div>
-    </section>
-
-    <!-- Surprise Box with 3D Flip Animation -->
-    <section id="surprise" class="surprise">
-        <h2>Celebrate Your Day.</h2>
-        <button onclick="revealSurprise()">Open Your Gift 🎁</button>
-        <div id="surprise-content" class="hidden">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="gift-box.jpg" alt="Gift Box">
-                    </div>
-                    <div class="flip-card-back">
-                        <p>Surprise! A video just for you!</p>
-                        <video controls>
-                            <source src="muskan.mp4" type="video/mp4">
-                            Your browser does not support the video element.
-                        </video>
+    <!-- Flip Card Section -->
+    <section class="surprise">
+        <div class="container text-center">
+            <h2>Flip Card Surprise</h2>
+            <div class="d-flex justify-content-center surprise-content">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>Front Side</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Back Side</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Created with endless love by Vicky, just for you, Muskan. 💕</p>
-    </footer>
+    <!-- Music Player Section -->
+    <section class="music">
+        <div class="container">
+            <h2 class="text-center">Music Player</h2>
+            <div class="music-player">
+                <audio controls>
+                    <source src="music1.mp3" type="audio/mpeg">
+                </audio>
+                <audio controls>
+                    <source src="music2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </section>
 
-    <!-- JavaScript for Interactions and Animations -->
-    <script src="script.js"></script>
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="text-center">Gallery</h2>
+            <div class="gallery-grid row">
+                <div class="col-6 col-md-4">
+                    <img src="gallery1.jpg" alt="Gallery 1">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="gallery2.jpg" alt="Gallery 2">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="gallery3.jpg" alt="Gallery 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
