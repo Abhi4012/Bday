@@ -195,6 +195,57 @@ section {
     border-radius: 10px;
 }
 
+
+/* Animation for "Happy" */
+.happy-text {
+    display: inline-block;
+    animation: moveLeftRight 2s infinite alternate ease-in-out;
+}
+
+/* Animation for "Birthday" */
+.birthday-text {
+    display: inline-block;
+    animation: moveUpDown 2s infinite alternate ease-in-out;
+}
+
+/* Animation for "Muskan" */
+.moving-text {
+    display: inline-block;
+    animation: moveRight 2s infinite alternate ease-in-out;
+}
+
+/* Keyframes for moving "Happy" left and right */
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+/* Keyframes for moving "Birthday" up and down */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+/* Keyframes for moving "Muskan" right */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+
+
 /* Animations */
 @keyframes fadeIn {
     from {
