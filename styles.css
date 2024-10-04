@@ -180,7 +180,7 @@ section {
 
 /* Gallery */
 .gallery {
-    background-color: #fff0f6; /* Light pink */
+    background-color: #6c28ba4c; /* Light pink */
     padding: 60px 20px;
 }
 
@@ -191,8 +191,10 @@ section {
 }
 
 .gallery img, .gallery video {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    max-height: 400px; /* Set a max height to avoid overflow */
 }
 
 
