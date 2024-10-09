@@ -178,10 +178,612 @@ section {
     margin: 10px 0; /* Add some space between audio players */
 }
 
+
+/* Music added new code */
+
+/* Music Section Styling */
+.music {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.music .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ff1493;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.music-track {
+    margin-bottom: 30px;
+}
+
+.track-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.track-card:hover {
+    transform: scale(1.05);
+}
+
+.track-art img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.track-info h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.track-info p {
+    font-size: 1em;
+    color: #777;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Button Animation */
+.play-button {
+    background-color: #ff1493;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #ff69b4;
+}
+
+
+
+/* CountDown timer */
+
+/* Special Countdown Section Styling */
+.countdown {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #93a0a7, #3e9abc);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Timer Container Styling */
+.timer-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Time Box Styling */
+.time-box {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    animation: shake 1s infinite alternate;
+}
+
+/* Shake Effect */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+/* Time Digits Styling */
+.time-digit {
+    font-size: 5em;
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+/* Label Styling */
+.time-label {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Celebration Message Styling */
+.celebration-message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: fadeIn 2s infinite;
+}
+
+/* Fading Effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Heart Animation Styling */
+.heart-animation {
+    font-size: 5em;
+    animation: heartbeat 1.5s infinite;
+    margin-top: 30px;
+}
+
+/* Heartbeat Effect */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Suprie box added */
+
+/* Surprise Section Styles */
+.surprise {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+}
+
+.surprise h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #ff4500; /* Vibrant color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success {
+    background-color: #32CD32; /* Bright green */
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn-success:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.gift-box {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    perspective: 1000px;
+    animation: float 3s infinite ease-in-out; /* Floating animation */
+}
+
+.lid {
+    width: 150px;
+    height: 75px;
+    background: linear-gradient(to top right, #ffcc00, #ff9900); /* Gold lid */
+    position: absolute;
+    top: -25px;
+    left: 0;
+    border-radius: 5px;
+    transform-origin: bottom;
+    transition: transform 0.6s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.body {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, #ff6347, #ff4500); /* Red body */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.message {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    z-index: 999; /* Ensure confetti is on top */
+}
+
+.confetti .piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Default color */
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+/* Generate random confetti pieces */
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Overlay Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* On top of everything */
+    animation: fadeIn 0.5s; /* Fade-in effect */
+}
+
+.overlay.hidden {
+    display: none; /* Hide overlay */
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.bounce {
+    animation: bounce 1s infinite; /* Bounce animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Sparkle Effect */
+.sparkle {
+    position: relative;
+    overflow: hidden;
+}
+
+.sparkle:before,
+.sparkle:after {
+    content: '';
+    position: absolute;
+    background: radial-gradient(circle, #fff 0%, transparent 80%);
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite;
+}
+
+.sparkle:before {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 20px;
+}
+
+.sparkle:after {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: 20px;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* Surprise Section Styles */
+.surprise {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+}
+
+.surprise h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #ff4500; /* Vibrant color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success {
+    background-color: #32CD32; /* Bright green */
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn-success:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.gift-box {
+    width: 180px; /* Increased width */
+    height: 180px; /* Increased height */
+    position: relative;
+    margin: 0 auto;
+    perspective: 1000px;
+    animation: float 3s infinite ease-in-out; /* Floating animation */
+}
+
+.lid {
+    width: 180px; /* Increased width */
+    height: 90px; /* Increased height */
+    background: linear-gradient(to top right, #ffcc00, #ff9900); /* Gold lid */
+    position: absolute;
+    top: -25px;
+    left: 0;
+    border-radius: 5px;
+    transform-origin: bottom;
+    transition: transform 0.6s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.body {
+    width: 180px; /* Increased width */
+    height: 180px; /* Increased height */
+    background: linear-gradient(to bottom, #ff6347, #ff4500); /* Red body */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.message {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Video section size adjustments */
+video {
+    width: 100%; /* Full width */
+    height: 120px; /* Increased height */
+    border-radius: 5px; /* Matching border radius */
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    z-index: 999; /* Ensure confetti is on top */
+}
+
+/* Overlay Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* On top of everything */
+    animation: fadeIn 0.5s; /* Fade-in effect */
+}
+
+.overlay.hidden {
+    display: none; /* Hide overlay */
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.bounce {
+    animation: bounce 1s infinite; /* Bounce animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Sparkle Effect */
+.sparkle {
+    position: relative;
+    overflow: hidden;
+}
+
+.sparkle:before,
+.sparkle:after {
+    content: '';
+    position: absolute;
+    background: radial-gradient(circle, #fff 0%, transparent 80%);
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite;
+}
+
+.sparkle:before {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 20px;
+}
+
+.sparkle:after {
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    right: 20px;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
 /* Gallery */
 .gallery {
     background-color: #6c28ba4c; /* Light pink */
-    padding: 60px 20px;
+    padding: 90px 90px;
 }
 
 .gallery-grid {
@@ -215,6 +817,210 @@ section {
     display: inline-block;
     animation: moveRight 2s infinite alternate ease-in-out;
 }
+
+/* Basic Styles */
+.timeline {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f3f4f6, #e3e3e3); /* Soft gradient background */
+}
+
+.timeline-item {
+    text-align: center;
+}
+
+/* Frame for Images */
+.image-frame {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 25px; /* More rounded corners */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* Dramatic shadow effect */
+    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Animation for hover effect */
+}
+
+/* Creative Image Style */
+.creative-img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px; /* Match the frame border radius */
+    filter: brightness(85%); /* Darken the image for better text contrast */
+    transition: transform 0.6s ease; /* Smooth zoom effect */
+}
+
+/* Overlay Style */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3); /* Soft white overlay */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px; /* Match the frame border radius */
+}
+
+/* Overlay Text Style */
+.overlay .text {
+    color: #ff69b4; /* Bright pink for text */
+    font-size: 2.2em; /* Larger text size */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px; /* More space between letters */
+    transform: scale(1.2); /* Slightly enlarged text */
+    opacity: 0;
+    animation: slideIn 0.5s forwards; /* Slide-in effect */
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(30px); /* Slide from below */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; /* Fade in */
+    }
+}
+
+/* Image Hover Effect */
+.image-frame:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8); /* Increase shadow on hover */
+}
+
+.image-frame:hover .creative-img {
+    transform: scale(1.05); /* Zoom in the image slightly */
+}
+
+.image-frame:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.image-frame:hover .overlay .text {
+    opacity: 1; /* Show text on overlay hover */
+}
+
+/* Add a Decorative Border Animation */
+.image-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid rgba(255, 105, 180, 0.5); /* Bright border */
+    border-radius: 25px;
+    transition: transform 0.6s ease;
+    transform: scale(0); /* Start small */
+}
+
+.image-frame:hover::before {
+    transform: scale(1); /* Scale up on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .overlay .text {
+        font-size: 1.5em; /* Smaller text on mobile */
+    }
+}
+
+/* new code from here */
+
+/* Gallery Styles */
+.gallery {
+    padding: 60px 0;
+    background-color: #ffffff; /* Clean background for a modern look */
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif; /* Clean font for headings */
+    color: #333; /* Dark text color */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+}
+
+/* Gallery Item Styles */
+.gallery-item {
+    position: relative; /* Position relative for overlay */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    margin: 15px; /* Spacing between items */
+}
+
+/* Artistic Piece Styles */
+.art-piece {
+    height: 300px; /* Fixed height for artistic pieces */
+    border-radius: 15px; /* Rounded corners */
+    display: flex; /* Flexbox for centering text */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease; /* Animation for hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+/* Overlay Styles */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.4s ease; /* Smooth transition for overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Match item border radius */
+}
+
+/* Overlay Text Styles */
+.overlay .text {
+    color: #ffd700; /* Gold color for text */
+    font-size: 1.5em; /* Font size for overlay text */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Shadow for text */
+    opacity: 0; /* Start with hidden text */
+    transform: scale(1.2); /* Slightly larger text */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth appearance */
+}
+
+/* Hover Effects */
+.art-piece:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+.art-piece:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.art-piece:hover .overlay .text {
+    opacity: 1; /* Show text on overlay */
+    transform: scale(1); /* Scale down text to normal */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8em; /* Smaller heading on mobile */
+    }
+
+    .overlay .text {
+        font-size: 1.2em; /* Smaller text on mobile */
+    }
+}
+
 
 /* Keyframes for moving "Happy" left and right */
 @keyframes moveLeftRight {
