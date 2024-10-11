@@ -674,6 +674,7 @@ audio {
 }
 
 /* Video section size adjustments */
+
 video {
     width: 100%; /* Full width */
     height: 120px; /* Increased height */
@@ -937,6 +938,7 @@ video {
 }
 
 /* Overlay Text Style */
+
 .overlay .text {
     color: #ff69b4; /* Bright pink for text */
     font-size: 2.2em; /* Larger text size */
