@@ -187,3 +187,37 @@ function getRandomColor() {
     const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A6', '#FFDE33'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
+
+
+function revealSurprise() {
+    document.getElementById('surprise-content').classList.remove('hidden');
+}
+
+function closeOverlay() {
+    document.getElementById('overlay').classList.add('hidden');
+}
+
+
+
+function revealSurprise() {
+    document.getElementById('surprise-content').classList.remove('hidden');
+    startFallingElements();
+}
+
+function startFallingElements() {
+    const container = document.getElementById('falling-elements');
+
+    for (let i = 0; i < 50; i++) {
+        const element = document.createElement('div');
+        element.className = 'falling-element ' + (Math.random() > 0.5 ? 'heart' : 'flower');
+        element.style.left = Math.random() * 100 + 'vw';
+        element.style.animationDuration = Math.random() * 3 + 2 + 's';
+        container.appendChild(element);
+
+        // Remove the element after the animation ends
+        element.addEventListener('animationend', () => {
+            container.removeChild(element);
+        });
+    }
+}
+

@@ -795,6 +795,76 @@ video {
     gap: 15px;
 }
 
+/* video section ------------------------------------------ */
+
+/* Fireworks Styling */
+#fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: explode 2.5s ease-out infinite;
+    transform: scale(0);
+}
+
+/* Fireworks Animation for Multi-stage Explosions */
+@keyframes explode {
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Different shapes and multi-colored fireworks */
+.firework.round {
+    border-radius: 50%;
+}
+
+.firework.star {
+    box-shadow: 0 0 20px 5px yellow;
+    background-color: transparent;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Fireworks color variation */
+.firework.red {
+    box-shadow: 0 0 30px 15px red;
+}
+
+.firework.blue {
+    box-shadow: 0 0 30px 15px blue;
+}
+
+.firework.green {
+    box-shadow: 0 0 30px 15px green;
+}
+
+
+
 .gallery img, .gallery video {
     width: 100%; /* Full width of the column */
     height: auto; /* Maintain aspect ratio */
